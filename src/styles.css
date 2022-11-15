@@ -6,5 +6,5 @@
     @apply bg-gray-100 rounded overflow-hidden shadow-md
 }
 .navicon{
-    @apply p-4 flex justify-end
+    @apply p-4 flex justify-end hover:bg-slate-600 hover:text-gray-50
 }

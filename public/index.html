@@ -8,15 +8,14 @@
 </head>
 <body class="text-zinc-700">
     <div><!-- content wrapper-->
-        <div>
-            <nav class="bg-gray-200">
-                <div class="flex">
+            <nav>
+                <div class="flex justify-between px-8 mx-auto border border-gray-500 bg-gray-200">
                     <div class = "flex justify-start">
                         <h1 class="font-bold uppercase p-4 justify">
                             <a href="/">Kyle Lowe</a>
                         </h1>
                     </div>
-                    <div class="flex justify-end">
+                    <div class="flex justify-start">
                         <a href="#" class="navicon">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -41,10 +40,50 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                                 </svg>
                             <span> Contact</span>
+                        </a>
                     </div>            
                 </div>
             </nav>
-                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+            <div id = "vanta-canvas">
+                <div class="text-6xl text-zinc-200 px-48 py-36">
+                    <h1>Welcome to  
+                    <br>Kyle's website</h1>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+                <script type="text/javascript">
+                VANTA.RINGS({
+                    el: "#vanta-canvas",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 600.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    backgroundColor: 0xa1931,
+                    color: 0x47d947
+                })
+                </script>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="bg-blue-zodiac-500">
+                <div class="text-center border-spacing-0">
+                    <h1>About</h1>
+                    <p>
+                        asdadsadaasdadsadaasdadsadaasdadsadaasdadsadaasdadsada
+    
+                    </p>
+                </div>
+                <h1 class="text-center">Projects</h1>
+                <div class="mt-8 grid lg:grid-cols-3 gap-10 px-10">
                     <!-- projects wrapper-->
                     <div class="project">
                         <img src="img/quickdraw/canvas.jpg" alt="Project 1" class="object-contain h-96 w-192 w-full">
@@ -65,13 +104,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
-        <main>
-
-
-        </main>
-
-    </div>
-    
+            </div>
+        </div>  
 </body>
 </html>
